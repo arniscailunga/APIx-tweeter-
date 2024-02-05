@@ -1,0 +1,28 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "an awesome API rest to handle some api",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arniscailunga/APIx-tweeter-.git"
+  },
+  "keywords": [
+    "arnisca1234"
+  ],
+  "author": "arniscailunga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arniscailunga/APIx-tweeter-/issues"
+  },
+  "homepage": "https://github.com/arniscailunga/APIx-tweeter-#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
