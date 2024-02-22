@@ -1,17 +1,13 @@
-const express = require('express')
+const express = require("express")
+const tweetRouter = require('./src/routes/tweetRoutes'); 
+const userRouter = require('./src/routes/userRoutes');
 
-const app= express()
+const app= express();
 const port= 3000
 
-app.get('/', function(req, res) {
-    res.send('hello again,express !')
-})
-app.get('/api/api/:id',function(req,res) {
-    const id= req.params.id
-    res.send(` vous avez demander le api n°${id}`)
+app.use('/tweet', tweetRouter);
+app.use('/user', userRouter)
 
-    })
+app.listen(port, () => console.log(`Voici mon application node est demarrée: sur http://localhost:${port}`));
 
-
-// weere
-app.listen(port, () => console.log('Notre application node est demarrée: sur http:// localhost:${port}'))
+module.exports= app;
